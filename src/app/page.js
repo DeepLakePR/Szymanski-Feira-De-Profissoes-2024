@@ -1,95 +1,91 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import defaultStyles from './templates/default.module.css';
+import mainPageStyles from "./page.module.css";
 
-export default function Home() {
+export default function Curso() {
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+
+    <main className={defaultStyles.mainContainer}>
+
+      <header className={defaultStyles.header}>
+    
+        <nav className={defaultStyles.headerNav}>
+
+          <ul className={defaultStyles.headerNavUl}>
+
+            <li><a href="/">Curso</a></li>
+            <li><a href="/home/">Home</a></li>
+            <li><a href="/elenco/">Elenco</a></li>
+
+          </ul>
+
+        </nav>
+    
+        <div className={defaultStyles.headerLogoDiv}>
+
+          <img src={'/logo.png'} className={defaultStyles.headerLogo} />
+
         </div>
-      </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      </header>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+      <section className={defaultStyles.main} style={{paddingTop: '0px'}}>
+        
+        <h2>Curso</h2>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+        <div className={defaultStyles.mainContainer}>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
+            <div className={mainPageStyles.cursoWrapper}>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+                <div className={mainPageStyles.materiasBoxSingle} id="analytic-development">
+
+                    <img src="/transparent.webp" />
+
+                    <h2>Análise e Desenvolvimento de Sistemas</h2>
+
+                    <p>
+                        Estuda as metodologias para criação de software, 
+                        estuda o trabalho cooperativo e ágil, trabalhando formas de entendermos as ideias, 
+                        as prioridades, como dividir as tarefas do grupo, etc para desenvolvermos o projeto de modo eficiente.
+                    </p>
+
+                </div>
+
+                <div className={mainPageStyles.materiasBoxSingle} id="science-computational">
+
+                    <img src="/transparent.webp" />
+
+                    <h2>Ciências da Computação</h2>
+
+                    <p>
+                        A ciências da computação estuda a arquitetura dos computadores, 
+                        como funciona o "corpo" dos computadores, a importância dessa arquitetura, 
+                        a diferença entre hardware e software.
+                    </p>
+
+                </div>
+
+                <div className={mainPageStyles.materiasBoxSingle} id="logic-computational">
+
+                    <img src="/transparent.webp" />
+
+                    <h2>Lógica Computacional</h2>
+
+                    <p>
+                        A lógica computacional se aplica em todo o processo de criação de um software, 
+                        desde a que tipo de conectivo lógico precisamos usar a se ele é verdadeiro ou falso.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+      
+      </section>
+
     </main>
+
   );
+  
 }
