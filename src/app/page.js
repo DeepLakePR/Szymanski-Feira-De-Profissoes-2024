@@ -1,91 +1,58 @@
 import defaultStyles from './templates/default.module.css';
-import mainPageStyles from "./page.module.css";
+import homeStyles from "./home.module.css";
 
-export default function Curso() {
+import Header from './templates/header/header.js';
+
+export default function Home() {
 
   return (
 
     <main className={defaultStyles.mainContainer}>
 
-      <header className={defaultStyles.header}>
-    
-        <nav className={defaultStyles.headerNav}>
+      <Header />
 
-          <ul className={defaultStyles.headerNavUl}>
+      <section className={defaultStyles.main} style={{ paddingTop: '0px' }}>
 
-            <li><a href="/">Curso</a></li>
-            <li><a href="/home/">Home</a></li>
-            <li><a href="/elenco/">Elenco</a></li>
+        <h2>Home</h2>
 
-          </ul>
+        <div className={homeStyles.DEV_homeWrapper}>
 
-        </nav>
-    
-        <div className={defaultStyles.headerLogoDiv}>
+          <div className={homeStyles.DEV_homeBoxSingle}>
 
-          <img src={'/logo.png'} className={defaultStyles.headerLogo} />
+            <img src="https://cdn.discordapp.com/attachments/714194024616951932/1220495097905418300/image.png?ex=660f25a3&is=65fcb0a3&hm=599334e7e3d4b53d08560fb16447593433a04b863341ec02ac5d73b57d6a7778&" />
 
-        </div>
+            <h3>Post Title</h3>
 
-      </header>
+            <p>Nisi sunt commodo tempor eiusmod excepteur dolor et laboris ut amet id consequat. Duis nisi fugiat cillum do id amet cupidatat nulla consequat eu non. Culpa ullamco culpa dolor aute adipisicing laboris mollit in magna. Adipisicing aliquip ut officia elit. Sit ex veniam dolore culpa aute labore ea duis ea.</p>
 
-      <section className={defaultStyles.main} style={{paddingTop: '0px'}}>
-        
-        <h2>Curso</h2>
+          </div>
 
-        <div className={defaultStyles.mainContainer}>
+          <div className={homeStyles.DEV_homeBoxSingle}>
 
-            <div className={mainPageStyles.cursoWrapper}>
+            <img src="https://cdn.discordapp.com/attachments/714194024616951932/1220495097905418300/image.png?ex=660f25a3&is=65fcb0a3&hm=599334e7e3d4b53d08560fb16447593433a04b863341ec02ac5d73b57d6a7778&" />
 
-                <div className={mainPageStyles.materiasBoxSingle} id="analytic-development">
+            <h3>Post Title</h3>
 
-                    <img src="/transparent.webp" />
+            <p>Nisi sunt commodo tempor eiusmod excepteur dolor et laboris ut amet id consequat. Duis nisi fugiat cillum do id amet cupidatat nulla consequat eu non. Culpa ullamco culpa dolor aute adipisicing laboris mollit in magna. Adipisicing aliquip ut officia elit. Sit ex veniam dolore culpa aute labore ea duis ea.</p>
 
-                    <h2>Análise e Desenvolvimento de Sistemas</h2>
+          </div>
 
-                    <p>
-                        Estuda as metodologias para criação de software, 
-                        estuda o trabalho cooperativo e ágil, trabalhando formas de entendermos as ideias, 
-                        as prioridades, como dividir as tarefas do grupo, etc para desenvolvermos o projeto de modo eficiente.
-                    </p>
+          <div className={homeStyles.DEV_homeBoxSingle}>
 
-                </div>
+            <img src="https://cdn.discordapp.com/attachments/714194024616951932/1220495097905418300/image.png?ex=660f25a3&is=65fcb0a3&hm=599334e7e3d4b53d08560fb16447593433a04b863341ec02ac5d73b57d6a7778&" />
 
-                <div className={mainPageStyles.materiasBoxSingle} id="science-computational">
+            <h3>Post Title</h3>
 
-                    <img src="/transparent.webp" />
+            <p>Nisi sunt commodo tempor eiusmod excepteur dolor et laboris ut amet id consequat. Duis nisi fugiat cillum do id amet cupidatat nulla consequat eu non. Culpa ullamco culpa dolor aute adipisicing laboris mollit in magna. Adipisicing aliquip ut officia elit. Sit ex veniam dolore culpa aute labore ea duis ea.</p>
 
-                    <h2>Ciências da Computação</h2>
-
-                    <p>
-                        A ciências da computação estuda a arquitetura dos computadores, 
-                        como funciona o "corpo" dos computadores, a importância dessa arquitetura, 
-                        a diferença entre hardware e software.
-                    </p>
-
-                </div>
-
-                <div className={mainPageStyles.materiasBoxSingle} id="logic-computational">
-
-                    <img src="/transparent.webp" />
-
-                    <h2>Lógica Computacional</h2>
-
-                    <p>
-                        A lógica computacional se aplica em todo o processo de criação de um software, 
-                        desde a que tipo de conectivo lógico precisamos usar a se ele é verdadeiro ou falso.
-                    </p>
-
-                </div>
-
-            </div>
+          </div>
 
         </div>
-      
+
       </section>
 
     </main>
 
   );
-  
+
 }
