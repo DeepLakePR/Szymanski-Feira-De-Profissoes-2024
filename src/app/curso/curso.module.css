@@ -1,3 +1,22 @@
+/* Course Custom CSS */
+.cursoBackground{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.mainText{
+    color: white;
+}
+
+.materiasClearBoth{
+    clear: both;
+}
+
 /* Course Section */
 .cursoWrapper {
     padding: 40px;
@@ -9,6 +28,7 @@
     width: 50%;
     margin: 10px;
     padding: 25px;
+    margin-bottom: 25px;
     border-radius: 8px;
     color: white;
     text-align: left;
@@ -32,26 +52,26 @@
     margin-bottom: 25px;
 }
 
+.materiasBoxSingle:nth-child(even){
+    float: right;
+}
+
 .materiasBoxSingle:nth-child(1) img {
     background-image: url('/analise_bg.png');
-    background-size: 50%;
+    background-size: 48%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 
 .materiasBoxSingle:nth-child(2) {
-    margin-bottom: 25px;
-    float: right;
-    text-align: right;
-    align-items: flex-end;
     background-color: rgba(221, 171, 5, 0.4);
     box-shadow: 0 0 10px 8px rgba(221, 171, 5, 0.35);
 }
 
 .materiasBoxSingle:nth-child(2) img {
     background-image: url('/ciencias_bg.png');
-    background-size: 45%;
+    background-size: 43%;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -63,8 +83,34 @@
 }
 
 .materiasBoxSingle:nth-child(3) img {
-    background-image: url('/logica_bg.png');
-    background-size: 45%;
+    background-image: url('/frontend.png');
+    background-size: 43%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.materiasBoxSingle:nth-child(4) {
+    background-color: rgba(131, 6, 189, 0.4);
+    box-shadow: 0 0 10px 8px rgba(131, 6, 189, 0.35);
+}
+
+.materiasBoxSingle:nth-child(4) img {
+    background-image: url('/mobile.png');
+    background-size: 38%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.materiasBoxSingle:nth-child(5) {
+    background-color: rgba(12, 168, 12, 0.4);
+    box-shadow: 0 0 10px 8px rgba(12, 168, 12, 0.35);
+}
+
+.materiasBoxSingle:nth-child(5) img {
+    background-image: url('/banco_dados_bg.png');
+    background-size: 40%;
     background-position: center;
     background-repeat: no-repeat;
 }

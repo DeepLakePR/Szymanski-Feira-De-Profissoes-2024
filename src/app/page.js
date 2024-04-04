@@ -1,7 +1,8 @@
 import defaultStyles from './templates/default.module.css';
-import homeStyles from "./home.module.css";
+import gridStyle from "./templates/default-grid.module.css";
 
 import Header from './templates/header/header.js';
+import Footer from './templates/footer/footer.js';
 
 export default function Home() {
 
@@ -9,17 +10,29 @@ export default function Home() {
 
     <main className={defaultStyles.mainContainer}>
 
-      <Header />
+      <Header></Header>
 
-      <section className={defaultStyles.main} style={{ paddingTop: '0px' }}>
+      <section className={defaultStyles.main} style={{ padding: '25px', paddingTop: '0px' }}>
 
         <h2>Home</h2>
 
-        <div className={homeStyles.DEV_homeWrapper}>
+        <div className={gridStyle.postWrapper}>
 
-          <div className={homeStyles.DEV_homeBoxSingle}>
 
-            <img src="https://cdn.discordapp.com/attachments/714194024616951932/1220495097905418300/image.png?ex=660f25a3&is=65fcb0a3&hm=599334e7e3d4b53d08560fb16447593433a04b863341ec02ac5d73b57d6a7778&" />
+          <div className={gridStyle.postBoxSingle} style={{width: '100%', gridColumnStart: 1, gridColumnEnd: 4, gridRowStart: 1, gridRowEnd: 0.9}}>
+
+            <img src="/home-photos/sala1.jpeg" style={{height: '80%', maxHeight: 'none', objectFit: 'cover'}} />
+
+            <h3>Post Title</h3>
+
+            <p>Somos uma turma apaixonada por tecnologia e inovação, dedicada a dominar as linguagens de programação mais recentes e a criar soluções incríveis. Estamos sempre em busca de desafios e oportunidades para aprender e crescer juntos.</p>
+
+          </div>
+
+
+          <div className={gridStyle.postBoxSingle}>
+
+            <img src="/home-photos/sala2.jpeg" />
 
             <h3>Post Title</h3>
 
@@ -27,9 +40,21 @@ export default function Home() {
 
           </div>
 
-          <div className={homeStyles.DEV_homeBoxSingle}>
 
-            <img src="https://cdn.discordapp.com/attachments/714194024616951932/1220495097905418300/image.png?ex=660f25a3&is=65fcb0a3&hm=599334e7e3d4b53d08560fb16447593433a04b863341ec02ac5d73b57d6a7778&" />
+          <div className={gridStyle.postBoxSingle}>
+
+            <img src="/home-photos/grupinho-leticia/photo1.jpeg" />
+
+            <h3>Post Title</h3>
+
+            <p>Nisi sunt commodo tempor eiusmod excepteur dolor et laboris ut amet id consequat. Duis nisi fugiat cillum do id amet cupidatat nulla consequat eu non. Culpa ullamco culpa dolor aute adipisicing laboris mollit in magna. Adipisicing aliquip ut officia elit. Sit ex veniam dolore culpa aute labore ea duis ea.</p>
+
+          </div>
+
+
+          <div className={gridStyle.postBoxSingle}>
+
+            <img src="/home-photos/grupinho-leticia/photo2.jpeg" />
 
             <h3>Post Title</h3>
 
@@ -37,19 +62,34 @@ export default function Home() {
 
           </div>
 
-          <div className={homeStyles.DEV_homeBoxSingle}>
 
-            <img src="https://cdn.discordapp.com/attachments/714194024616951932/1220495097905418300/image.png?ex=660f25a3&is=65fcb0a3&hm=599334e7e3d4b53d08560fb16447593433a04b863341ec02ac5d73b57d6a7778&" />
+          <div className={gridStyle.postBoxSingle}>
+
+            <img src="/home-photos/grupinho-leticia/photo3.jpeg" />
 
             <h3>Post Title</h3>
 
             <p>Nisi sunt commodo tempor eiusmod excepteur dolor et laboris ut amet id consequat. Duis nisi fugiat cillum do id amet cupidatat nulla consequat eu non. Culpa ullamco culpa dolor aute adipisicing laboris mollit in magna. Adipisicing aliquip ut officia elit. Sit ex veniam dolore culpa aute labore ea duis ea.</p>
 
           </div>
+
+
+          <div className={gridStyle.postBoxSingle}>
+
+            <img src="/home-photos/grupinho-leticia/photo4.jpeg" />
+
+            <h3>Post Title</h3>
+
+            <p>Nisi sunt commodo tempor eiusmod excepteur dolor et laboris ut amet id consequat. Duis nisi fugiat cillum do id amet cupidatat nulla consequat eu non. Culpa ullamco culpa dolor aute adipisicing laboris mollit in magna. Adipisicing aliquip ut officia elit. Sit ex veniam dolore culpa aute labore ea duis ea.</p>
+
+          </div>
+
 
         </div>
 
       </section>
+
+      <Footer></Footer>
 
     </main>
 

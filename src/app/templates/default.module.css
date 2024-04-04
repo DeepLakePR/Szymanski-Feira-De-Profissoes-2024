@@ -1,8 +1,6 @@
 /* Main Container */
 .mainContainer {
     margin: 0 auto;
-    padding: 0 2%;
-    max-width: 1280px;
 }
 
 /* Main */
@@ -11,10 +9,9 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 25px;
-    height: 100vh;
+    min-height: 100vh;
 }
 
-.main>h2 {
+.main > h2 {
     font-weight: 400;
 }

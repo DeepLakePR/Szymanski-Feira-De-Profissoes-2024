@@ -1,6 +1,13 @@
 import HeaderStyle from "./header.module.css";
+import HeaderCustomStyle from './header.css';
+import classNames from "classnames";
 
-export default function Header() {
+export default function Header(props) {
+
+    const headerNavUlClasses = classNames({
+        headerNavUl: true,
+        headerNavUlCustomColor: props.changeNavigationButtonsColor == 'true' ? true : false
+    })
 
     return (
 
@@ -16,7 +23,7 @@ export default function Header() {
 
                 <nav className={HeaderStyle.headerNav}>
 
-                    <ul className={HeaderStyle.headerNavUl}>
+                    <ul className={headerNavUlClasses}>
 
                         <li><a href="/">Home</a></li>
                         <li><a href="/curso/">Curso</a></li>

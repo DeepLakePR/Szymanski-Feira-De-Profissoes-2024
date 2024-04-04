@@ -1,7 +1,7 @@
 :root {
-  --foreground-rgb: white;
-  --background-start-rgb: rgb(226, 226, 226);
-  --background-end-rgb: #acacac;
+  --text-color-rgb: white;
+  --background-start-rgb: rgb(45, 45, 45);
+  --background-end-rgb: rgb(27, 27, 27);
 }
 
 * {
@@ -17,7 +17,7 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: var(--text-color-rgb);
   background: linear-gradient(180deg, var(--background-start-rgb), var(--background-end-rgb));
 }
 
