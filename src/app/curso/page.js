@@ -90,7 +90,6 @@ export default function Course() {
 
                 </div>
 
-
             </section>
 
             <Footer></Footer>

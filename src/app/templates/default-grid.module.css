@@ -8,6 +8,7 @@
 .postBoxSingle {
     width: 100%;
     padding: 10px;
+    max-height: 500px;
     background: rgb(45, 45, 45);
     border-radius: 4px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
@@ -39,4 +40,19 @@
 .postBoxSingle p {
     font-weight: 300;
     padding-bottom: 40px;
+}
+
+/**************************************/
+/* Responsive */
+@media screen and (max-width: 878px){
+
+    .postWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .postBoxSingle img {
+        height: 200px;
+    }
+
 }

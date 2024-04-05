@@ -36,7 +36,7 @@ export default function Elenco() {
 
                         <h3>Allana</h3>
 
-                        <p>Nisi sunt commodo tempor eiusmod excepteur dolor et laboris ut amet id consequat. Duis nisi fugiat cillum do id amet cupidatat nulla consequat eu non. Culpa ullamco culpa dolor aute adipisicing laboris mollit in magna. Adipisicing aliquip ut officia elit. Sit ex veniam dolore culpa aute labore ea duis ea.</p>
+                        <p>Undefined</p>
 
                     </div>
 
@@ -47,7 +47,7 @@ export default function Elenco() {
 
                         <h3>Isabelly</h3>
 
-                        <p>Nisi sunt commodo tempor eiusmod excepteur dolor et laboris ut amet id consequat. Duis nisi fugiat cillum do id amet cupidatat nulla consequat eu non. Culpa ullamco culpa dolor aute adipisicing laboris mollit in magna. Adipisicing aliquip ut officia elit. Sit ex veniam dolore culpa aute labore ea duis ea.</p>
+                        <p>Undefined</p>
 
                     </div>
 
@@ -58,7 +58,7 @@ export default function Elenco() {
 
                         <h3>Isadora</h3>
 
-                        <p>“uma mente curiosa e determinada, sempre em busca de novos desafios e oportunidades para crescer!“</p>
+                        <p>“Uma mente curiosa e determinada, sempre em busca de novos desafios e oportunidades para crescer!“</p>
 
                     </div>
 

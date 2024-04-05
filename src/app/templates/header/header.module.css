@@ -16,9 +16,27 @@
 .headerLogo {
     max-height: 106px;
     margin-right: 10px;
-    border-radius: 12px;
 }
 
 .headerNav {
     padding: 5px;
+}
+
+/**************************************/
+/* Responsive */
+@media screen and (max-width: 650px){
+
+    .header{
+        margin-bottom: 50px;
+    }
+
+    .headerContainer{
+        flex-direction: column;
+    }
+
+    .headerLogo {
+        max-height: 200px;
+        margin: 0;
+    }
+
 }
