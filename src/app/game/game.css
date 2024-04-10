@@ -1,0 +1,12 @@
+/* Reset CSS */
+*{
+    color: black;
+    text-align: center;
+}
+
+body{
+    background: none;
+    display: grid;
+    place-items: center;
+    padding: 25px;
+}
